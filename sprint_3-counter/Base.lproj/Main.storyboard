@@ -23,7 +23,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="counter"/>
                                 <connections>
-                                    <action selector="buttonTouchCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Olf-AD-r5N"/>
+                                    <action selector="touchCounterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Olf-AD-r5N"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Значение счетчика: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vA-lg-pP2">
@@ -38,8 +38,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="LabelCounter" destination="4vA-lg-pP2" id="jfb-Ln-EUH"/>
-                        <outlet property="buttonCounter" destination="KoD-iC-aHa" id="5tF-yW-9oe"/>
+                        <outlet property="counterButton" destination="KoD-iC-aHa" id="5tF-yW-9oe"/>
+                        <outlet property="valueCountLabel" destination="4vA-lg-pP2" id="zfa-RZ-P0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

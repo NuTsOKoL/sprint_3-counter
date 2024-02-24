@@ -1,28 +1,18 @@
-//
-//  ViewController.swift
-//  sprint_3-counter
-//
-//  Created by mac on 18.02.2024.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var LabelCounter: UILabel!
-    @IBOutlet weak var buttonCounter: UIButton!
     
-    var newButtonCouner = 0
+    @IBOutlet weak private var valueCountLabel: UILabel!
+    @IBOutlet weak private var counterButton: UIButton!
+    
+    private var newCounerButton = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-    @IBAction func buttonTouchCounter(_ sender: Any) {
-    newButtonCouner += 1
-    LabelCounter.text = "Значение счетчика: \(newButtonCouner)"
-       
+    
+    @IBAction private func touchCounterButton(_ sender: Any) {
+        newCounerButton += 1
+        valueCountLabel.text = "Значение счетчика: \(newCounerButton)"
     }
 }
-
